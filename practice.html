@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<head>
+    <h1>Heading 1 in header</h1>
+</head>
+<body>
+    <p>This is a line in body</p>
+    <p id="demo">This is a line with an ID</p>
+    <button onclick="document.getElementById('demo').innerHTML = 'Line is now changed!'">Click me to change sentence!</button>
+    <button onclick="document.getElementById('demo').style.fontSize='40px'">Click Me to change font size!</button>   
+    <p id="demo1" style="display:none">Hello JavaScript!</p>
+    <button type="button" onclick="document.getElementById('demo1').style.display='block'">Click Me!</button>
+    <p id="demo2">JavaScript can hide HTML elements.</p>
+    <button type="button" onclick="document.getElementById('demo2').style.display='none'">Click Me!</button>
+    <p id="demo4" onclick="myFunction()">Click me.</p>
+
+<script>
+function myFunction() {
+  document.getElementById("demo4").innerHTML = "YOU CLICKED ME!";
+}
+</script>
+</html>

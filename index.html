@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name=""description" content="enter description here">
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=opera gx">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+</head>
+<body>
+    <h1>Hello World</h1>
+    <p id="demo">Hello JavaScript</p>
+    <button type="button" onclick="document.getElementById('demo').innerHTML= 'Hello HTML'">Click me!</button>
+    <button type="button" onclick="document.getElementById('demo').innerHTML= 'Hello JavaScript'">Click me!</button>
+    <script src="index.js"> 
+    function greet(name){
+        console.log("hello",name)
+        document.getElementById('name').innerHTML='Aayush Gautam'
+    </script>
+    <p id="name" onclick="reveal()">I know your name</p>
+    <button type="button" onclick="greet('aayush')">Click to reveal</button>   
+<script>
+function reveal() {
+  document.getElementById("name").innerHTML = "It's Aayush innit";
+}
+</script>
+</body>
+</html>
